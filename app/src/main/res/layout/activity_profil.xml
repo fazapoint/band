@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilActivity"
+    android:paddingBottom="50dp">
+
+    <TextView
+        android:id="@+id/tv_profile"
+        android:paddingTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="@string/profil"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profil_photo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/tv_profile"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profil" />
+
+    <TextView
+        android:id="@+id/profil_name"
+        android:text="Anisykurli Faza Ramadhani"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profil_photo"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="50dp"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/profil_email"
+        android:text="fazaramadhani99@gmail.com"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profil_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingTop="80dp"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+</RelativeLayout>
